@@ -1,0 +1,83 @@
+#navigation {
+    margin: 0px 5%;
+    display: flex;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 75% 25%;
+    grid-template-areas:
+      "background hobbies"
+      "work contact";
+  }
+
+ body {
+    border-bottom: 5px solid #FF6200;
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    right: 100px;
+    top: 120px;
+    padding: 50px;
+    max-width: 550px;
+    z-index: 100;
+   }
+/* 
+  .hero-banner {
+    grid-area: hero-banner;
+  } */
+
+  .navBar {
+    color: #FF6200;
+    font-weight: 700;
+  }
+    
+  #background,
+  #hobbies,
+  #work,
+  #contact { 
+    grid-area: page-section;
+    justify-content: space-around;
+    cursor: pointer;
+   }  
+  
+  #work {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+   }
+  
+  #contact {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+  } 
+  .highlight {
+    color: #FF6200;
+    font-weight: 700;
+  }
+  
+  /* Typography CSS
+  
+  h2 {
+    font-size: 60px;
+    margin: 0px 0px;
+    color: #FF6200;
+  }
+  
+  h3 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0px 0px;
+  }
+  
+  h4 {
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+  } */
+  
