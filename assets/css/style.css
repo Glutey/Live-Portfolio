@@ -1,83 +1,84 @@
-#navigation {
-    margin: 0px 5%;
-    display: flex;
-    min-height: 500px;
-    height: 70vh;
-    grid-template-rows: 75% 25%;
-    grid-template-columns: 75% 25%;
-    grid-template-areas:
-      "background hobbies"
-      "work contact";
+
+   /* @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); */
+  /* @import url(https://fonts.google.com/share?selection.family=Roboto:wght@100;400); */
+
+.header {
+  display: grid;
+  grid-template-rows: none;
+  grid-template-areas: 
+  "home portfolio about services contact";
+  grid-template-areas: "icon menu";
+  padding: 40px;
+  flex-direction: column;
+  background: url('../images/pawel-czerwinski-dgJT71cXlC4-unsplash\ \(1\).jpg');
+  background-size: cover;
+}
+
+.header .menu {
+  grid-area: menu;
+  grid-auto-flow: column;
+  display: flex;
+  grid-gap: 32px;
+  align-items: end;
+  justify-content: end;
+}
+
+.header .icon {
+  grid-area: icon;
+  height: 114px;
+}
+
+.menu a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu > *:hover{
+  font-weight: bold;
+  color: blue;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+  text-align: justify;
+}
+
+/* .bio {
+  display: flex;
+  flex-direction: row;
+  font-family: Roboto, sans-serif;
+  padding: 40px;
+  text-align: justify;
+} */
+
+section > * {
+  padding-right: 40px
+}
+
+section > *:last-child {
+  padding-right: 0px
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    flex-direction: column;
   }
 
- body {
-    border-bottom: 5px solid #FF6200;
-    background-color: rgba(255,255,255,0.8);
-    position: absolute;
-    right: 100px;
-    top: 120px;
-    padding: 50px;
-    max-width: 550px;
-    z-index: 100;
-   }
-/* 
-  .hero-banner {
-    grid-area: hero-banner;
-  } */
+  .info {
+    /* flex-direction: column-reverse; */
+  }
 
-  .navBar {
-    color: #FF6200;
-    font-weight: 700;
+  section > * {
+    padding-bottom: 40px
   }
-    
-  #background,
-  #hobbies,
-  #work,
-  #contact { 
-    grid-area: page-section;
-    justify-content: space-around;
-    cursor: pointer;
-   }  
-  
-  #work {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    display: flex;
-    position: relative;
-   }
-  
-  #contact {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    display: flex;
-    position: relative;
-  } 
-  .highlight {
-    color: #FF6200;
-    font-weight: 700;
-  }
-  
-  /* Typography CSS
-  
-  h2 {
-    font-size: 60px;
-    margin: 0px 0px;
-    color: #FF6200;
-  }
-  
-  h3 {
-    font-size: 32px;
-    font-weight: 300;
-    margin: 0px 0px;
-  }
-  
-  h4 {
-    color: white;
-    font-weight: 400;
-    font-size: 22px;
+
+  /* section > *:last-child {
+    padding-bottom: 0px
   } */
-  
+  section img {
+    justify-items: normal;
+  }
+}

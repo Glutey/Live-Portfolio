@@ -5,53 +5,87 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel=”stylesheet”d href="assets/css/reset.css">
-  <link rel=”stylesheets” href="assets/css/style.css">
-  <title>Thomas Screen - Web Developer</title>
+  <meta content="https://github.com/Glutey/mod2challenge">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+  <title>Thomas Screen | Web Developer</title>
 </head>
 
-<body>
-  <!-- main logo / nav -->
-  <nav class="navBar">
-    <header>
-      <h1>Thomas Screen</h1>
-      <div id="navigation">
-        <p>Background</p>
-        <p>Hobbies</p>
-        <p>Work</p>
-        <p>Contact Me</p>
-    <!-- <nav> -->
-    <!-- </nav> -->
-    </header>
-    <div class="icons">
-        <img src="assets/images/user@2x.png">
-        <img src="assets/images/search@2x 4.png">
-    </div>
+<body id="home">
+  <nav class="header">
+    <a href="#home"><img class="icon" src="http://www.emilyridge.ie/wp-content/themes/skeleostrnge/lib/img/logo-web-developer-emily-ridge.png" alt="Thomas Screen" title="Thomas Screen"></a>
+
+      <ul class="menu">
+        <li class="home"><a href="#home">Home</a></li> 
+        <li class="about"><a href="#about">About</a></li>
+        <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+        <li class="services"><a href="#services">Services</a></li>
+        <li class="contact"><a href="#contact">Contact</a></li>
+       </ul>
   </nav>
-  <!-- hero banner -->
-  <section id="background">
-    <div>
-      <h2>Background</h2>
-    </div>
-  </section>
 
-  <main class="page-section">
-    <img src="assets/images/02-portfolio-1.jpg">
-    <!-- about me -->
-    <section class="page-section" id="hobbies">
-      <h2>Hobbies</h2>
+  <main>
+    <!-- about container here, alt tags? correct font, spacing, padding and functionality? -->
+    <section class="bio" id="about">
+      <img src="assets/images/Profile pic.jpg" alt="Personal picture of the web designer" height="400px" width="320px">
+      <span>
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quam illum, soluta veniam voluptatem sequi aperiam iure doloremque consequatur eius accusamus nam quidem vitae possimus cupiditate dignissimos? Nesciunt, sit perspiciatis?</p>
+      </span>
     </section>
 
-    <!-- portfolio container -->
-    <img src="assets/images/02-portfolio-2.jpg">
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <!-- portfolio container here -->
+    <section class="info" id="portfolio">
+      <!-- <span> -->
+      <h2>Portfolio</h2>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus id, nulla esse possimus officiis aliquam quisquam repellendus quia vero incidunt odio mollitia laboriosam eligendi tempora veritatis consectetur totam doloribus quod.</p> -->
+      <!-- </span> -->
+      <span class="images">
+        <img src="assets/images/john-jennings-fg7J6NnebBc-unsplash.jpg" height="200px" alt="a hand and arm reaching forward toward an open body of water">
+        <img src="assets/images/john-schnobrich-FlPc9_VocJ4-unsplash.jpg" height="200px" alt="a hand and arm reaching forward toward an open body of water">
+        <img src="assets/images/kelly-sikkema-io0ZLYbu31s-unsplash.jpg" height="200px" alt="a hand and arm reaching forward toward an open body of water">
+      </span>
     </section>
 
-    <!-- contact -->
-    <img src="assets/images/02-portfolio-3.jpg">
-    <section class="page-section" id="contact">
-      <h2>Contact Me</h2>
+    <!-- services container here --> 
+    <section class="products"  id="services">
+      <img src="assets/images/new-data-services-Ar-iTL4QKl4-unsplash.jpg" width="300px">
+      <span>
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus id, nulla esse possimus officiis aliquam quisquam repellendus quia vero incidunt odio mollitia laboriosam eligendi tempora veritatis consectetur totam doloribus quod.</p>
+      </span>
+    </section>
+
+    <!-- contact container here -->
+    <!-- <img src="assets/images/joanna-kosinska-7ACuHoezUYk-unsplash.jpg" height="200px" width="400px" alt="laptop screen showing some HTML code and a calculator">
+    <section class="page-section" id="jhhjh">
+      <h2>Services</h2>
+      <div class="col-lg-8 col-md-7 animation-wrapper">
+        <img class="slide_up main_position animate img-responsive" src="http://www.emilyridge.ie/wp-content/uploads/freelance-web-designer-in-galway.png"><img class="slide_right animate img-responsive hidden-xs" src="http://www.emilyridge.ie/wp-content/uploads/freelance-web-designer-emily-ridge.png" alt="" title="">
+        <img class="slide_left animate img-responsive hidden-xs" src="http://www.emilyridge.ie/wp-content/uploads/freelance-web-designer-in-ireland.png" alt="Example website on iPhone or Smartphone">                
+      </div>
+      <img class="img-center img-responsive margin-top icon" src="http://www.emilyridge.ie/wp-content/uploads/galway-website-design.png" alt="Website Design";>
+    </section> -->
+
+    <!-- contact containeer here-->
+    <img src="assets/images/dose-media-bU6JyhSI6zo-unsplash.jpg" height="200px" width="500px" alt="clean white desktop with a notebook, plant and pen on top">
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/Glutey/" target="_blank">
+            <img alt="Github" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjYgKDY3NDkxKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5naXRodWI8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iZ2l0aHViIiBmaWxsPSIjNzc3Nzc3Ij4KICAgICAgICAgICAgPHBhdGggZD0iTTEyLDAuMjk3IEM1LjM3LDAuMjk3IDAsNS42NyAwLDEyLjI5NyBDMCwxNy42IDMuNDM4LDIyLjA5NyA4LjIwNSwyMy42ODIgQzguODA1LDIzLjc5NSA5LjAyNSwyMy40MjQgOS4wMjUsMjMuMTA1IEM5LjAyNSwyMi44MiA5LjAxNSwyMi4wNjUgOS4wMSwyMS4wNjUgQzUuNjcyLDIxLjc4OSA0Ljk2OCwxOS40NTUgNC45NjgsMTkuNDU1IEM0LjQyMiwxOC4wNyAzLjYzMywxNy43IDMuNjMzLDE3LjcgQzIuNTQ2LDE2Ljk1NiAzLjcxNywxNi45NzEgMy43MTcsMTYuOTcxIEM0LjkyMiwxNy4wNTUgNS41NTUsMTguMjA3IDUuNTU1LDE4LjIwNyBDNi42MjUsMjAuMDQyIDguMzY0LDE5LjUxMiA5LjA1LDE5LjIwNSBDOS4xNTgsMTguNDI5IDkuNDY3LDE3LjkgOS44MSwxNy42IEM3LjE0NSwxNy4zIDQuMzQ0LDE2LjI2OCA0LjM0NCwxMS42NyBDNC4zNDQsMTAuMzYgNC44MDksOS4yOSA1LjU3OSw4LjQ1IEM1LjQ0NCw4LjE0NyA1LjAzOSw2LjkyNyA1LjY4NCw1LjI3NCBDNS42ODQsNS4yNzQgNi42ODksNC45NTIgOC45ODQsNi41MDQgQzkuOTQ0LDYuMjM3IDEwLjk2NCw2LjEwNSAxMS45ODQsNi4wOTkgQzEzLjAwNCw2LjEwNSAxNC4wMjQsNi4yMzcgMTQuOTg0LDYuNTA0IEMxNy4yNjQsNC45NTIgMTguMjY5LDUuMjc0IDE4LjI2OSw1LjI3NCBDMTguOTE0LDYuOTI3IDE4LjUwOSw4LjE0NyAxOC4zODksOC40NSBDMTkuMTU0LDkuMjkgMTkuNjE5LDEwLjM2IDE5LjYxOSwxMS42NyBDMTkuNjE5LDE2LjI4IDE2LjgxNCwxNy4yOTUgMTQuMTQ0LDE3LjU5IEMxNC41NjQsMTcuOTUgMTQuOTU0LDE4LjY4NiAxNC45NTQsMTkuODEgQzE0Ljk1NCwyMS40MTYgMTQuOTM5LDIyLjcwNiAxNC45MzksMjMuMDk2IEMxNC45MzksMjMuNDExIDE1LjE0OSwyMy43ODYgMTUuNzY0LDIzLjY2NiBDMjAuNTY1LDIyLjA5MiAyNCwxNy41OTIgMjQsMTIuMjk3IEMyNCw1LjY3IDE4LjYyNywwLjI5NyAxMiwwLjI5NyIgaWQ9IlBhdGgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==">
+          </a>
+        </li>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+      </ul>
+      <!-- to have icons for FB, Email, GitHb and LinkedIn along with their links to those pages -->
     </section>
   </main>
 </body>
