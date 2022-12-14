@@ -1,3 +1,27 @@
+/* CODE FOR THE FIXED NAVBAR.. NEED TO INTERGRATE IT INTO THE SITE AND HTML FILE */
+
+/* .navbar {
+  overflow: hidden;
+  background-color: #666666;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #eeeeee;
+  text-align: center;
+  padding: 15px 18px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #1c87c9;
+} */
+
 .header {
   display: grid;
   grid-template-rows: none;
